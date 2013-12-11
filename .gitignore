@@ -1,0 +1,26 @@
+# xcode noise
+*.pbxuser
+*.mode1v3
+*.pyc
+*~.nib/
+*.perspective
+*.perspectivev3
+
+xcuserdata
+contents.xcworkspacedata
+
+# CocoaPods
+Pods
+
+# vim
+.*.swp
+
+# old skool
+.svn
+
+# osx noise
+.DS_Store
+profile
+
+# Windows noise
+Thumbs.db
