@@ -7,7 +7,6 @@
 *.perspectivev3
 
 xcuserdata
-contents.xcworkspacedata
 
 # CocoaPods
 Pods
