@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BFA859D418865D2B00A496DD /* RRPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA859D318865D2B00A496DD /* RRPlayer.m */; };
+		BFA859D518865D2B00A496DD /* RRPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA859D318865D2B00A496DD /* RRPlayer.m */; };
+		BFA859E018865F4900A496DD /* RRPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA859DF18865F4900A496DD /* RRPoint.m */; };
+		BFA859E118865F4900A496DD /* RRPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA859DF18865F4900A496DD /* RRPoint.m */; };
+		BFA859E8188662C000A496DD /* RRBattleshipGameRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA859E7188662C000A496DD /* RRBattleshipGameRunner.m */; };
+		BFA859EB1886652300A496DD /* RRShip.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA859EA1886652300A496DD /* RRShip.m */; };
+		BFA859EC1886652300A496DD /* RRShip.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA859EA1886652300A496DD /* RRShip.m */; };
 		BFDC3D501857E89F00EE971E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFDC3D4F1857E89F00EE971E /* Foundation.framework */; };
 		BFDC3D521857E89F00EE971E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFDC3D511857E89F00EE971E /* CoreGraphics.framework */; };
 		BFDC3D541857E89F00EE971E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFDC3D531857E89F00EE971E /* UIKit.framework */; };
@@ -36,6 +43,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BFA859D218865D2B00A496DD /* RRPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RRPlayer.h; path = Classes/RRPlayer.h; sourceTree = "<group>"; };
+		BFA859D318865D2B00A496DD /* RRPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RRPlayer.m; path = Classes/RRPlayer.m; sourceTree = "<group>"; };
+		BFA859DE18865F4900A496DD /* RRPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RRPoint.h; path = Classes/RRPoint.h; sourceTree = "<group>"; };
+		BFA859DF18865F4900A496DD /* RRPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RRPoint.m; path = Classes/RRPoint.m; sourceTree = "<group>"; };
+		BFA859E2188661C600A496DD /* RRDirection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RRDirection.h; path = Classes/RRDirection.h; sourceTree = "<group>"; };
+		BFA859E6188662C000A496DD /* RRBattleshipGameRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RRBattleshipGameRunner.h; path = Classes/RRBattleshipGameRunner.h; sourceTree = "<group>"; };
+		BFA859E7188662C000A496DD /* RRBattleshipGameRunner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RRBattleshipGameRunner.m; path = Classes/RRBattleshipGameRunner.m; sourceTree = "<group>"; };
+		BFA859E91886652300A496DD /* RRShip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RRShip.h; path = Classes/RRShip.h; sourceTree = "<group>"; };
+		BFA859EA1886652300A496DD /* RRShip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RRShip.m; path = Classes/RRShip.m; sourceTree = "<group>"; };
 		BFDC3D4C1857E89F00EE971E /* Battleship.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Battleship.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFDC3D4F1857E89F00EE971E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BFDC3D511857E89F00EE971E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -85,6 +101,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BFA859D018864B7000A496DD /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BFA859D118865CF100A496DD /* Models */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		BFA859D118865CF100A496DD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BFA859D218865D2B00A496DD /* RRPlayer.h */,
+				BFA859D318865D2B00A496DD /* RRPlayer.m */,
+				BFA859DE18865F4900A496DD /* RRPoint.h */,
+				BFA859DF18865F4900A496DD /* RRPoint.m */,
+				BFA859E2188661C600A496DD /* RRDirection.h */,
+				BFA859E91886652300A496DD /* RRShip.h */,
+				BFA859EA1886652300A496DD /* RRShip.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		BFDC3D431857E89F00EE971E = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +157,7 @@
 		BFDC3D571857E89F00EE971E /* Battleship */ = {
 			isa = PBXGroup;
 			children = (
+				BFA859D018864B7000A496DD /* Classes */,
 				BFDC3D601857E89F00EE971E /* RRAppDelegate.h */,
 				BFDC3D611857E89F00EE971E /* RRAppDelegate.m */,
 				BFDC3D661857E89F00EE971E /* RRViewController.h */,
@@ -147,6 +186,8 @@
 			isa = PBXGroup;
 			children = (
 				BFDC3D811857E89F00EE971E /* BattleshipTests.m */,
+				BFA859E6188662C000A496DD /* RRBattleshipGameRunner.h */,
+				BFA859E7188662C000A496DD /* RRBattleshipGameRunner.m */,
 				BFDC3D7C1857E89F00EE971E /* Supporting Files */,
 			);
 			path = BattleshipTests;
@@ -259,10 +300,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFA859D418865D2B00A496DD /* RRPlayer.m in Sources */,
 				BFDC3D621857E89F00EE971E /* RRAppDelegate.m in Sources */,
+				BFA859E018865F4900A496DD /* RRPoint.m in Sources */,
 				BFDC3D5E1857E89F00EE971E /* main.m in Sources */,
 				BFDC3D6B1857E89F00EE971E /* RRMyScene.m in Sources */,
 				BFDC3D681857E89F00EE971E /* RRViewController.m in Sources */,
+				BFA859EB1886652300A496DD /* RRShip.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +314,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFA859D518865D2B00A496DD /* RRPlayer.m in Sources */,
 				BFDC3D821857E89F00EE971E /* BattleshipTests.m in Sources */,
+				BFA859EC1886652300A496DD /* RRShip.m in Sources */,
+				BFA859E118865F4900A496DD /* RRPoint.m in Sources */,
+				BFA859E8188662C000A496DD /* RRBattleshipGameRunner.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,8 +434,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Battleship/Battleship-Prefix.pch";
 				INFOPLIST_FILE = "Battleship/Battleship-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -400,8 +450,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Battleship/Battleship-Prefix.pch";
 				INFOPLIST_FILE = "Battleship/Battleship-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
