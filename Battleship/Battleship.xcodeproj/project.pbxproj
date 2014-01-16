@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF6B2C5F18878DA000479DB2 /* RRBattleshipGameRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA859E7188662C000A496DD /* RRBattleshipGameRunner.m */; };
 		BFA859D418865D2B00A496DD /* RRPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA859D318865D2B00A496DD /* RRPlayer.m */; };
 		BFA859D518865D2B00A496DD /* RRPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA859D318865D2B00A496DD /* RRPlayer.m */; };
 		BFA859E018865F4900A496DD /* RRPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA859DF18865F4900A496DD /* RRPoint.m */; };
 		BFA859E118865F4900A496DD /* RRPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA859DF18865F4900A496DD /* RRPoint.m */; };
-		BFA859E8188662C000A496DD /* RRBattleshipGameRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA859E7188662C000A496DD /* RRBattleshipGameRunner.m */; };
 		BFA859EB1886652300A496DD /* RRShip.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA859EA1886652300A496DD /* RRShip.m */; };
 		BFA859EC1886652300A496DD /* RRShip.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA859EA1886652300A496DD /* RRShip.m */; };
 		BFDC3D501857E89F00EE971E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFDC3D4F1857E89F00EE971E /* Foundation.framework */; };
@@ -315,10 +315,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFA859D518865D2B00A496DD /* RRPlayer.m in Sources */,
+				BF6B2C5F18878DA000479DB2 /* RRBattleshipGameRunner.m in Sources */,
 				BFDC3D821857E89F00EE971E /* BattleshipTests.m in Sources */,
 				BFA859EC1886652300A496DD /* RRShip.m in Sources */,
 				BFA859E118865F4900A496DD /* RRPoint.m in Sources */,
-				BFA859E8188662C000A496DD /* RRBattleshipGameRunner.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

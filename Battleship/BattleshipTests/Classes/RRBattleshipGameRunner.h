@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Reichley Inc. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
 #import "RRPlayer.h"
 #import "RRShip.h"

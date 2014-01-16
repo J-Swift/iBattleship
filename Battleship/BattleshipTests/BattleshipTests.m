@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Reichley Inc. All rights reserved.
 //
 
-#import <XCTest/XCTest.h>
+@import XCTest;
 
 #import "RRBattleshipGameRunner.h"
 

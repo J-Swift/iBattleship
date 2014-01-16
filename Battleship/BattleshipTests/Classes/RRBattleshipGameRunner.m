@@ -6,11 +6,10 @@
 //  Copyright (c) 2014 Reichley Inc. All rights reserved.
 //
 
-#import <XCTest/XCTestAssertions.h>
 
 #import "RRBattleshipGameRunner.h"
 
-@interface RRBattleshipGameRunner()
+@interface RRBattleshipGameRunner ()
 
 @property (nonatomic, strong) RRPlayer *player1;
 @property (nonatomic, strong) RRPlayer *player2;
@@ -35,62 +34,62 @@
 
 - (void)shouldBeOver
 {
-  NSAssert(NO, @"NOT IMPLEMENTED");
+  NSAssert(NO, @"shouldBeOver");
 }
 
 - (void)fireAtPoint:(RRPoint *)point
 {
-  NSAssert(NO, @"NOT IMPLEMENTED");
+  NSAssert(NO, @"fireAtPoint");
 }
 
 - (void)shouldBePlayer1Turn
 {
-  NSAssert(NO, @"NOT IMPLEMENTED");
+  NSAssert(NO, @"shouldBePlayer1Turn");
 }
 
 - (void)shouldBePlayer2Turn
 {
-  NSAssert(NO, @"NOT IMPLEMENTED");
+  NSAssert(NO, @"shouldBePlayer2Turn");
 }
 
 - (void)missesByPlayer1:(NSSet *)misses
 {
-  NSAssert(NO, @"NOT IMPLEMENTED");
+  NSAssert(NO, @"missesByPlayer1");
 }
 
 - (void)missesByPlayer2:(NSSet *)misses
 {
-  NSAssert(NO, @"NOT IMPLEMENTED");
+  NSAssert(NO, @"missesByPlayer2");
 }
 
 - (void)hitsByPlayer1:(NSSet *)hits
 {
-  NSAssert(NO, @"NOT IMPLEMENTED");
+  NSAssert(NO, @"hitsByPlayer1");
 }
 
 - (void)hitsByPlayer2:(NSSet *)hits
 {
-  NSAssert(NO, @"NOT IMPLEMENTED");
+  NSAssert(NO, @"hitsByPlayer2");
 }
 
 - (void)shipsSunkByPlayer1:(NSSet *)ships
 {
-  NSAssert(NO, @"NOT IMPLEMENTED");
+  NSAssert(NO, @"shipsSunkByPlayer1");
 }
 
 - (void)shipsSunkByPlayer2:(NSSet *)ships
 {
-  NSAssert(NO, @"NOT IMPLEMENTED");
+  NSAssert(NO, @"shipsSunkByPlayer2");
 }
 
 - (void)shipsRemainingForPlayer1:(NSSet *)ships
 {
-  NSAssert(NO, @"NOT IMPLEMENTED");
+  NSAssert(NO, @"shipsRemainingForPlayer1");
 }
 
 - (void)shipsRemainingForPlayer2:(NSSet *)ships
 {
-  NSAssert(NO, @"NOT IMPLEMENTED");
+  NSAssert(NO, @"shipsRemainingForPlayer2");
 }
 
 @end
