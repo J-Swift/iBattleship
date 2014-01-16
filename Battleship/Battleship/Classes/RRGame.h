@@ -15,6 +15,9 @@
 
 @interface RRGame : NSObject
 
+@property (nonatomic, readonly) RRPlayer *player1;
+@property (nonatomic, readonly) RRPlayer *player2;
+
 - (instancetype)initWithPlayer1:(RRPlayer *)player1 player2:(RRPlayer *)player2;
 
 @end

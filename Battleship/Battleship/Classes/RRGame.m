@@ -10,8 +10,8 @@
 
 @interface RRGame ()
 
-@property (nonatomic, strong) RRPlayer *player1;
-@property (nonatomic, strong) RRPlayer *player2;
+@property (nonatomic, strong, readwrite) RRPlayer *player1;
+@property (nonatomic, strong, readwrite) RRPlayer *player2;
 
 @end
 
