@@ -12,6 +12,7 @@
 #import "RRShip.h"
 #import "RRPoint.h"
 #import "RRDirection.h"
+#import "RRShipPositioning.h"
 
 @interface RRGame : NSObject
 

@@ -10,6 +10,8 @@
 		BF6B2C5F18878DA000479DB2 /* RRGameRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA859E7188662C000A496DD /* RRGameRunner.m */; };
 		BF6B2C621887918300479DB2 /* RRGame.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6B2C611887918300479DB2 /* RRGame.m */; };
 		BF6B2C631887918300479DB2 /* RRGame.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6B2C611887918300479DB2 /* RRGame.m */; };
+		BF6B2C6618879B2500479DB2 /* RRShipPositioning.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6B2C6518879B2500479DB2 /* RRShipPositioning.m */; };
+		BF6B2C6718879B2500479DB2 /* RRShipPositioning.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6B2C6518879B2500479DB2 /* RRShipPositioning.m */; };
 		BFA859D418865D2B00A496DD /* RRPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA859D318865D2B00A496DD /* RRPlayer.m */; };
 		BFA859D518865D2B00A496DD /* RRPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA859D318865D2B00A496DD /* RRPlayer.m */; };
 		BFA859E018865F4900A496DD /* RRPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA859DF18865F4900A496DD /* RRPoint.m */; };
@@ -47,6 +49,8 @@
 /* Begin PBXFileReference section */
 		BF6B2C601887918300479DB2 /* RRGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RRGame.h; path = Classes/RRGame.h; sourceTree = "<group>"; };
 		BF6B2C611887918300479DB2 /* RRGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RRGame.m; path = Classes/RRGame.m; sourceTree = "<group>"; };
+		BF6B2C6418879B2500479DB2 /* RRShipPositioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RRShipPositioning.h; path = Classes/RRShipPositioning.h; sourceTree = "<group>"; };
+		BF6B2C6518879B2500479DB2 /* RRShipPositioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RRShipPositioning.m; path = Classes/RRShipPositioning.m; sourceTree = "<group>"; };
 		BFA859D218865D2B00A496DD /* RRPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RRPlayer.h; path = Classes/RRPlayer.h; sourceTree = "<group>"; };
 		BFA859D318865D2B00A496DD /* RRPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RRPlayer.m; path = Classes/RRPlayer.m; sourceTree = "<group>"; };
 		BFA859DE18865F4900A496DD /* RRPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RRPoint.h; path = Classes/RRPoint.h; sourceTree = "<group>"; };
@@ -125,6 +129,8 @@
 				BFA859EA1886652300A496DD /* RRShip.m */,
 				BF6B2C601887918300479DB2 /* RRGame.h */,
 				BF6B2C611887918300479DB2 /* RRGame.m */,
+				BF6B2C6418879B2500479DB2 /* RRShipPositioning.h */,
+				BF6B2C6518879B2500479DB2 /* RRShipPositioning.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -313,6 +319,7 @@
 				BFDC3D5E1857E89F00EE971E /* main.m in Sources */,
 				BFDC3D6B1857E89F00EE971E /* RRMyScene.m in Sources */,
 				BFDC3D681857E89F00EE971E /* RRViewController.m in Sources */,
+				BF6B2C6618879B2500479DB2 /* RRShipPositioning.m in Sources */,
 				BFA859EB1886652300A496DD /* RRShip.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,6 +333,7 @@
 				BF6B2C5F18878DA000479DB2 /* RRGameRunner.m in Sources */,
 				BFDC3D821857E89F00EE971E /* RRGameTests.m in Sources */,
 				BFA859EC1886652300A496DD /* RRShip.m in Sources */,
+				BF6B2C6718879B2500479DB2 /* RRShipPositioning.m in Sources */,
 				BFA859E118865F4900A496DD /* RRPoint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
