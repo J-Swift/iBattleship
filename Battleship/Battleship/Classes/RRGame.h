@@ -21,4 +21,9 @@
 
 - (instancetype)initWithPlayer1:(RRPlayer *)player1 player2:(RRPlayer *)player2;
 
+- (RRPlayer *)currentPlayer;
+- (void)fireAtPoint:(RRPoint *)point;
+
+- (BOOL)isOver;
+
 @end

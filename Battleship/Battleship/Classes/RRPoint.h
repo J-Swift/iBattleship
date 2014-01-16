@@ -8,12 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+#import "RRDirection.h"
+
 @interface RRPoint : NSObject
 
 @property (nonatomic, readonly) unichar letter;
 @property (nonatomic, readonly) NSUInteger number;
 
 - (instancetype)initWithLetter:(unichar)letter number:(NSUInteger)number;
+
+- (instancetype)pointInDirection:(RRDirection)direction;
 
 @end
 

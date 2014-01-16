@@ -42,7 +42,7 @@
   RRPoint *point;
   
   RRGame *battleshipGame = [[RRGame alloc] initWithPlayer1:player1
-                                         player2:player2];
+                                                   player2:player2];
   RRGameRunner *game = [RRGameRunner runnerWithGame:battleshipGame];
   
   [game shouldBePlayer1Turn];

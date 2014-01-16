@@ -103,4 +103,9 @@
   return self;
 }
 
+- (NSString *)description
+{
+  return [NSString stringWithFormat:@"Ship: %@", [[self class] description]];
+}
+
 @end

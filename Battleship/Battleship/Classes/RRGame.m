@@ -10,8 +10,8 @@
 
 @interface RRGame ()
 
-@property (nonatomic, strong, readwrite) RRPlayer *player1;
-@property (nonatomic, strong, readwrite) RRPlayer *player2;
+@property (nonatomic, strong) RRPlayer *currentPlayer;
+@property (nonatomic, strong) RRPlayer *otherPlayer;
 
 @end
 
@@ -24,11 +24,41 @@
   
   if ( self = [super init] )
   {
-    self.player1 = player1;
-    self.player2 = player2;
+    _player1 = player1;
+    _player2 = player2;
+    
+    _currentPlayer = player1;
+    _otherPlayer = player2;
   }
   
   return self;
+}
+
+- (RRPlayer *)currentPlayer
+{
+  return _currentPlayer;
+}
+
+- (void)fireAtPoint:(RRPoint *)point
+{
+  [_otherPlayer fireAtPoint:point];
+  
+  [self finishTurn];
+}
+
+- (BOOL)isOver
+{
+  return !([[self.player1 shipsRemaining] count] && [[self.player2 shipsRemaining] count]);
+}
+
+#pragma mark - Helpers
+
+- (void)finishTurn
+{
+  // Swap the current/other player
+  RRPlayer *player = _currentPlayer;
+  _currentPlayer = _otherPlayer;
+  _otherPlayer = player;
 }
 
 @end
