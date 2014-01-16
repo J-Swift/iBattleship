@@ -89,7 +89,7 @@
   static RRShip *battleshipSingleton = nil;
   
   dispatch_once( &onceToken, ^{
-    battleshipSingleton = [RRShipDestroyer new];
+    battleshipSingleton = [RRShipBattleship new];
   } );
   
   return battleshipSingleton;
