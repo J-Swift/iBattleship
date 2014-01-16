@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-#import "RRShip.h"
-#import "RRPoint.h"
 #import "RRDirection.h"
+@class RRShip;
+@class RRPoint;
 
 @interface RRPlayer : NSObject
 
