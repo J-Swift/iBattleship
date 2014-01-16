@@ -1,35 +1,26 @@
 //
-//  RRBattleshipGameRunner.m
-//  Battleship
+//  RRGameRunner.m
+//  BattleshipTests
 //
 //  Created by James Reichley on 1/15/14.
 //  Copyright (c) 2014 Reichley Inc. All rights reserved.
 //
 
 
-#import "RRBattleshipGameRunner.h"
+#import "RRGameRunner.h"
 
-@interface RRBattleshipGameRunner ()
-
-@property (nonatomic, strong) RRPlayer *player1;
-@property (nonatomic, strong) RRPlayer *player2;
+@interface RRGameRunner ()
 
 @end
 
-@implementation RRBattleshipGameRunner
+@implementation RRGameRunner
 
-- (instancetype)initWithPlayer1:(RRPlayer *)player1 player2:(RRPlayer *)player2
++ (instancetype)runnerWithGame:(RRGame *)game;
 {
-  NSParameterAssert(player1);
-  NSParameterAssert(player2);
+  RRGameRunner *runner = [[RRGameRunner alloc] init];
+  runner.game = game;
   
-  if ( self = [super init] )
-  {
-    self.player1 = player1;
-    self.player2 = player2;
-  }
-  
-  return self;
+  return runner;
 }
 
 - (void)shouldBeOver
@@ -44,7 +35,7 @@
 
 - (void)shouldBePlayer1Turn
 {
-  NSAssert(NO, @"shouldBePlayer1Turn");
+  NSAssert(YES, @"shouldBePlayer1Turn");
 }
 
 - (void)shouldBePlayer2Turn

@@ -1,6 +1,6 @@
 //
-//  RRBattleshipGameRunner.h
-//  Battleship
+//  RRGameRunner.h
+//  BattleshipTests
 //
 //  Created by James Reichley on 1/15/14.
 //  Copyright (c) 2014 Reichley Inc. All rights reserved.
@@ -8,14 +8,13 @@
 
 @import Foundation;
 
-#import "RRPlayer.h"
-#import "RRShip.h"
-#import "RRPoint.h"
-#import "RRDirection.h"
+#import "RRGame.h"
 
-@interface RRBattleshipGameRunner : NSObject
+@interface RRGameRunner : NSObject
 
-- (instancetype)initWithPlayer1:(RRPlayer *)player1 player2:(RRPlayer *)player2;
+@property (nonatomic, strong) RRGame *game;
+
++ (instancetype)runnerWithGame:(RRGame *)game;
 
 - (void)shouldBeOver;
 

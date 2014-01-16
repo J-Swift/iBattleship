@@ -10,7 +10,6 @@
 
 @interface RRShip : NSObject
 
-//@property (nonatomic, readonly) 
 @property (nonatomic, readonly) NSUInteger size;
 
 + (instancetype)destroyer;

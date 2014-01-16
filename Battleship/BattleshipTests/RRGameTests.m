@@ -1,5 +1,5 @@
 //
-//  BattleshipTests.m
+//  RRGameTests.m
 //  BattleshipTests
 //
 //  Created by James Reichley on 12/10/13.
@@ -8,13 +8,14 @@
 
 @import XCTest;
 
-#import "RRBattleshipGameRunner.h"
+#import "RRGame.h"
+#import "RRGameRunner.h"
 
-@interface BattleshipTests : XCTestCase
+@interface RRGameTests : XCTestCase
 
 @end
 
-@implementation BattleshipTests
+@implementation RRGameTests
 
 - (void)testGameIntegrationTest
 {
@@ -40,8 +41,9 @@
   NSMutableSet *player2Misses = [NSMutableSet set];
   RRPoint *point;
   
-  RRBattleshipGameRunner *game = [[RRBattleshipGameRunner alloc] initWithPlayer1:player1
-                                                                         player2:player2];
+  RRGame *battleshipGame = [[RRGame alloc] initWithPlayer1:player1
+                                         player2:player2];
+  RRGameRunner *game = [RRGameRunner runnerWithGame:battleshipGame];
   
   [game shouldBePlayer1Turn];
   
