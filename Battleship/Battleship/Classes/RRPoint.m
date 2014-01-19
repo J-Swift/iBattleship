@@ -26,9 +26,6 @@
   return self;
 }
 
-/**
- * @return A point which is 1-space away in the given direction
- */
 - (instancetype)pointInDirection:(RRDirection)direction
 {
   unichar nextLetter = self.letter;

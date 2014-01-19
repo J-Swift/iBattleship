@@ -33,6 +33,9 @@
 
 - (instancetype)initWithLetter:(unichar)letter number:(NSUInteger)number;
 
+/**
+ * @return A point which is 1-space away in the given direction
+ */
 - (instancetype)pointInDirection:(RRDirection)direction;
 
 @end

@@ -44,51 +44,31 @@
   [self.remainingStore addObject:positioning];
 }
 
-/**
- * Collection of RRPoints
- */
 - (NSSet *)hits
 {
   return [self.hitsStore copy];
 }
 
-/**
- * Collection of RRPoints
- */
 - (NSSet *)misses
 {
   return [self.missesStore copy];
 }
 
-/**
- * Collection of RRShipPositionings
- */
 - (NSSet *)positionedShips
 {
   return [self.positioningsStore copy];
 }
 
-/**
- * Collection of RRShipPositionings
- */
 - (NSSet *)shipsRemaining
 {
   return [self.remainingStore copy];
 }
 
-/**
- * Collection of RRShipPositionings
- */
 - (NSSet *)shipsSunk
 {
   return [self.sunkStore copy];
 }
 
-/**
- * Handles all logic for hits/misses/sinking
- *
- * @return The ShipPositioning that was hit or nil if miss
- */
 - (RRShipPositioning *)fireAtPoint:(RRPoint *)point
 {
   RRShipPositioning *hit = nil;
