@@ -15,8 +15,7 @@
 
 @interface RRPlayer : NSObject
 
-// JPR TODO: pass in a Positioning instead
-- (void)placeShip:(RRShip *)ship atPoint:(RRPoint *)point facing:(RRDirection)direction;
+- (void)positionShip:(RRShipPositioning *)positioning;
 
 - (NSSet *)positionedShips;
 - (NSSet *)shipsSunk;

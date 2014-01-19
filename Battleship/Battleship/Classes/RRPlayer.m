@@ -38,13 +38,10 @@
 
 #pragma mark - API
 
-- (void)placeShip:(RRShip *)ship atPoint:(RRPoint *)point facing:(RRDirection)direction
+- (void)positionShip:(RRShipPositioning *)positioning
 {
-  RRShipPositioning *pos = [RRShipPositioning positioningWithShip:ship
-                                                            point:point
-                                                        direction:direction];
-  [self.positioningsStore addObject:pos];
-  [self.remainingStore addObject:pos];
+  [self.positioningsStore addObject:positioning];
+  [self.remainingStore addObject:positioning];
 }
 
 /**

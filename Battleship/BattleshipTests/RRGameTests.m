@@ -20,20 +20,27 @@
 - (void)testGameIntegrationTest
 {
   RRPlayer *player1 = [RRPlayer new];
-  [player1 placeShip:[RRShip destroyer]
-             atPoint:RRPointMake('B', 1)
-              facing:RRDirectionDown];
-  [player1 placeShip:[RRShip cruiser]
-             atPoint:RRPointMake('E', 7)
-              facing:RRDirectionRight];
-  
   RRPlayer *player2 = [RRPlayer new];
-  [player2 placeShip:[RRShip destroyer]
-             atPoint:RRPointMake('J', 5)
-              facing:RRDirectionRight];
-  [player2 placeShip:[RRShip battleship]
-             atPoint:RRPointMake('J', 1)
-              facing:RRDirectionRight];
+  
+  RRShipPositioning *p1_destroyer = [RRShipPositioning positioningWithShip:[RRShip destroyer]
+                                                                     point:RRPointMake('B', 1)
+                                                                 direction:RRDirectionDown];
+  RRShipPositioning *p1_cruiser = [RRShipPositioning positioningWithShip:[RRShip cruiser]
+                                                                   point:RRPointMake('E', 7)
+                                                               direction:RRDirectionRight];
+  
+  RRShipPositioning *p2_destroyer = [RRShipPositioning positioningWithShip:[RRShip destroyer]
+                                                                     point:RRPointMake('J', 5)
+                                                                 direction:RRDirectionRight];
+  RRShipPositioning *p2_battleship = [RRShipPositioning positioningWithShip:[RRShip battleship]
+                                                                      point:RRPointMake('J', 1)
+                                                                  direction:RRDirectionRight];
+  
+  [player1 positionShip:p1_destroyer];
+  [player1 positionShip:p1_cruiser];
+  
+  [player2 positionShip:p2_destroyer];
+  [player2 positionShip:p2_battleship];
   
   NSMutableSet *player1Hits = [NSMutableSet set];
   NSMutableSet *player1Misses = [NSMutableSet set];
