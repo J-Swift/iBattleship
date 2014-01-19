@@ -10,6 +10,22 @@
 
 #import "RRDirection.h"
 
+/*
+ * Boards are laid out as follows:
+ *
+ *   1 2 3 4 5 6 7 8 9 10
+ * A
+ * B
+ * C
+ * D
+ * E
+ * F
+ * G
+ * H
+ * I
+ * J
+ */
+
 @interface RRPoint : NSObject
 
 @property (nonatomic, readonly) unichar letter;

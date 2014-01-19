@@ -12,12 +12,14 @@
 
 - (instancetype)initWithLetter:(unichar)letter number:(NSUInteger)number
 {
-  NSParameterAssert('A' <= letter && letter <= 'J');
+  NSParameterAssert(('A' <= letter && letter <= 'J') ||
+                    ('a' <= letter && letter <= 'j'));
   NSParameterAssert(1 <= number && number <= 10);
   
   if ( self = [super init] )
   {
-    _letter = letter;
+    // normalize to uppercase
+    _letter = [[[NSString stringWithCharacters:&letter length:1] uppercaseString] characterAtIndex:0];
     _number = number;
   }
   
@@ -33,8 +35,14 @@
   NSUInteger nextNumber = self.number;
   
   switch (direction) {
+    case RRDirectionUp:
+      nextLetter -= 1;
+      break;
     case RRDirectionDown:
       nextLetter += 1;
+      break;
+    case RRDirectionLeft:
+      nextNumber -= 1;
       break;
     case RRDirectionRight:
       nextNumber += 1;
