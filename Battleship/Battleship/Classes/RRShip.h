@@ -14,6 +14,8 @@
 
 + (instancetype)destroyer;
 + (instancetype)cruiser;
++ (instancetype)submarine;
 + (instancetype)battleship;
++ (instancetype)aircraftCarrier;
 
 @end

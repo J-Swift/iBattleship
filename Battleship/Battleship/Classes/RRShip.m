@@ -41,6 +41,20 @@
 
 @end
 
+#pragma mark - RRShipSubmarine
+
+@interface RRShipSubmarine : RRShip
+@end
+
+@implementation RRShipSubmarine
+
+- (instancetype)init
+{
+  return [super initWithSize:3];
+}
+
+@end
+
 #pragma mark - RRShipBattleship
 
 @interface RRShipBattleship : RRShip
@@ -51,6 +65,20 @@
 - (instancetype)init
 {
   return [super initWithSize:4];
+}
+
+@end
+
+#pragma mark - RRShipAircraftCarrier
+
+@interface RRShipAircraftCarrier : RRShip
+@end
+
+@implementation RRShipAircraftCarrier
+
+- (instancetype)init
+{
+  return [super initWithSize:5];
 }
 
 @end
@@ -83,6 +111,18 @@
   return cruiserSingleton;
 }
 
++ (instancetype)submarine
+{
+  static dispatch_once_t onceToken;
+  static RRShip *submarineSingleton = nil;
+  
+  dispatch_once( &onceToken, ^{
+    submarineSingleton = [RRShipSubmarine new];
+  } );
+  
+  return submarineSingleton;
+}
+
 + (instancetype)battleship
 {
   static dispatch_once_t onceToken;
@@ -93,6 +133,18 @@
   } );
   
   return battleshipSingleton;
+}
+
++ (instancetype)aircraftCarrier
+{
+  static dispatch_once_t onceToken;
+  static RRShip *aircraftCarrierSingleton = nil;
+  
+  dispatch_once( &onceToken, ^{
+    aircraftCarrierSingleton = [RRShipAircraftCarrier new];
+  } );
+  
+  return aircraftCarrierSingleton;
 }
 
 - (instancetype)initWithSize:(NSUInteger)size
