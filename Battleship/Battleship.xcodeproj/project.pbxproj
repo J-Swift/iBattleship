@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BF60BF3F188B53D5009DD3A1 /* RRPointTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF60BF3E188B53D5009DD3A1 /* RRPointTests.m */; };
+		BF60BF41188B62CC009DD3A1 /* RRShipTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF60BF40188B62CC009DD3A1 /* RRShipTests.m */; };
 		BF6B2C5F18878DA000479DB2 /* RRGameRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA859E7188662C000A496DD /* RRGameRunner.m */; };
 		BF6B2C621887918300479DB2 /* RRGame.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6B2C611887918300479DB2 /* RRGame.m */; };
 		BF6B2C631887918300479DB2 /* RRGame.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6B2C611887918300479DB2 /* RRGame.m */; };
@@ -49,6 +50,7 @@
 
 /* Begin PBXFileReference section */
 		BF60BF3E188B53D5009DD3A1 /* RRPointTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RRPointTests.m; path = Classes/RRPointTests.m; sourceTree = "<group>"; };
+		BF60BF40188B62CC009DD3A1 /* RRShipTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RRShipTests.m; path = Classes/RRShipTests.m; sourceTree = "<group>"; };
 		BF6B2C601887918300479DB2 /* RRGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RRGame.h; path = Classes/RRGame.h; sourceTree = "<group>"; };
 		BF6B2C611887918300479DB2 /* RRGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RRGame.m; path = Classes/RRGame.m; sourceTree = "<group>"; };
 		BF6B2C6418879B2500479DB2 /* RRShipPositioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RRShipPositioning.h; path = Classes/RRShipPositioning.h; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				BF60BF3E188B53D5009DD3A1 /* RRPointTests.m */,
+				BF60BF40188B62CC009DD3A1 /* RRShipTests.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 				BFDC3D821857E89F00EE971E /* RRGameTests.m in Sources */,
 				BFA859EC1886652300A496DD /* RRShip.m in Sources */,
 				BF6B2C6718879B2500479DB2 /* RRShipPositioning.m in Sources */,
+				BF60BF41188B62CC009DD3A1 /* RRShipTests.m in Sources */,
 				BFA859E118865F4900A496DD /* RRPoint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
