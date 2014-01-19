@@ -15,7 +15,11 @@
 
 @interface RRPlayer : NSObject
 
-- (void)positionShip:(RRShipPositioning *)positioning;
+/**
+ * Position a ship on this player's field of play
+ * @return Whether or not the ship was successfully placed
+ */
+- (BOOL)positionShip:(RRShipPositioning *)positioning;
 
 /**
  * Collection of RRShipPositionings

@@ -38,10 +38,15 @@
 
 #pragma mark - API
 
-- (void)positionShip:(RRShipPositioning *)positioning
+- (BOOL)positionShip:(RRShipPositioning *)positioning
 {
+  if ( ![self canAddPosition:positioning] )
+    return NO;
+  
   [self.positioningsStore addObject:positioning];
   [self.remainingStore addObject:positioning];
+  
+  return YES;
 }
 
 - (NSSet *)hits
@@ -92,6 +97,17 @@
   }
   
   return hit;
+}
+
+#pragma mark - Helpers
+- (BOOL)canAddPosition:(RRShipPositioning *)pos
+{
+  NSSet *points = [pos pointsContained];
+  for (RRShipPositioning *ship in [self positionedShips])
+    if ( [points intersectsSet:[ship pointsContained]] )
+        return NO;
+        
+  return YES;
 }
 
 @end
