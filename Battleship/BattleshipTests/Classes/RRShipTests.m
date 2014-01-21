@@ -1,19 +1,9 @@
 //
-// This software is supplied by Gloto Corp. ("Gloto"). Any user of this
-// software agrees to hold Gloto harmless for any and all damages or
-// liabilities that arise out of the use of the software for any purpose.
-// Gloto provides this source code "as is" and does not warrant
-// suitability for any purpose. Gloto grants the user of the software a
-// non-exclusive right to modify and redistribute the source code for any
-// purpose.
-// 
-// Copyright (c) 2014 - Gloto Corp.
+//  RRShipTests.m
+//  BattleshipTests
 //
-//
-// RRShipTests.m
-// Battleship
-//
-// Created by James Reichley on 1/18/14.
+//  Created by James Reichley on 12/10/13.
+//  Copyright (c) 2013 Reichley Inc. All rights reserved.
 //
 
 
