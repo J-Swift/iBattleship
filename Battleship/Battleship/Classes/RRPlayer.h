@@ -13,6 +13,9 @@
 @class RRPoint;
 @class RRShipPositioning;
 
+// JPR TODO: clean up this API.. should the Game be holding this info instead
+// of the Player (e.g. hits/misses)?
+
 @interface RRPlayer : NSObject
 
 /**

@@ -89,6 +89,7 @@
   else
   {
     [self.hitsStore addObject:point];
+    // Check if ship is sunk
     if ( [[hit pointsContained] isSubsetOfSet:self.hitsStore] )
     {
       [self.remainingStore removeObject:hit];

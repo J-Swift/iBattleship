@@ -30,7 +30,6 @@
 		BFDC3D621857E89F00EE971E /* RRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFDC3D611857E89F00EE971E /* RRAppDelegate.m */; };
 		BFDC3D681857E89F00EE971E /* RRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFDC3D671857E89F00EE971E /* RRViewController.m */; };
 		BFDC3D6B1857E89F00EE971E /* RRMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = BFDC3D6A1857E89F00EE971E /* RRMyScene.m */; };
-		BFDC3D6D1857E89F00EE971E /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = BFDC3D6C1857E89F00EE971E /* Spaceship.png */; };
 		BFDC3D6F1857E89F00EE971E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFDC3D6E1857E89F00EE971E /* Images.xcassets */; };
 		BFDC3D761857E89F00EE971E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFDC3D751857E89F00EE971E /* XCTest.framework */; };
 		BFDC3D771857E89F00EE971E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFDC3D4F1857E89F00EE971E /* Foundation.framework */; };
@@ -81,7 +80,6 @@
 		BFDC3D671857E89F00EE971E /* RRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RRViewController.m; sourceTree = "<group>"; };
 		BFDC3D691857E89F00EE971E /* RRMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RRMyScene.h; sourceTree = "<group>"; };
 		BFDC3D6A1857E89F00EE971E /* RRMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RRMyScene.m; sourceTree = "<group>"; };
-		BFDC3D6C1857E89F00EE971E /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		BFDC3D6E1857E89F00EE971E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BFDC3D741857E89F00EE971E /* BattleshipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BattleshipTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFDC3D751857E89F00EE971E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -125,10 +123,20 @@
 			name = Classes;
 			sourceTree = "<group>";
 		};
+		BF60BF44188BA00D009DD3A1 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				BFDC3D691857E89F00EE971E /* RRMyScene.h */,
+				BFDC3D6A1857E89F00EE971E /* RRMyScene.m */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
 		BFA859D018864B7000A496DD /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				BFA859D118865CF100A496DD /* Models */,
+				BF60BF44188BA00D009DD3A1 /* Scenes */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -190,9 +198,6 @@
 				BFDC3D611857E89F00EE971E /* RRAppDelegate.m */,
 				BFDC3D661857E89F00EE971E /* RRViewController.h */,
 				BFDC3D671857E89F00EE971E /* RRViewController.m */,
-				BFDC3D691857E89F00EE971E /* RRMyScene.h */,
-				BFDC3D6A1857E89F00EE971E /* RRMyScene.m */,
-				BFDC3D6C1857E89F00EE971E /* Spaceship.png */,
 				BFDC3D6E1857E89F00EE971E /* Images.xcassets */,
 				BFDC3D581857E89F00EE971E /* Supporting Files */,
 			);
@@ -310,7 +315,6 @@
 			files = (
 				BFDC3D5C1857E89F00EE971E /* InfoPlist.strings in Resources */,
 				BFDC3D6F1857E89F00EE971E /* Images.xcassets in Resources */,
-				BFDC3D6D1857E89F00EE971E /* Spaceship.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,7 +477,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -489,7 +493,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
