@@ -51,4 +51,41 @@
                  @"pos2");
 }
 
+- (void)testFireAndMissReturnsNil
+{
+  XCTAssertEqual([[self.player positionedShips] count], 0U,
+                 @"should not have any ships positioned");
+  XCTAssertNil([self.player fireAtPoint:RRPointMake('A', 1)],
+               @"fireAtPoint should return nil on miss");
+}
+
+- (void)testFireAndHitReturnsAppropriateShipPositioning
+{
+  RRShipPositioning *pos = [RRShipPositioning positioningWithShip:[RRShip destroyer] point:RRPointMake('A', 1) direction:RRDirectionRight];
+  [self.player positionShip:pos];
+  
+  XCTAssertEqual([self.player fireAtPoint:RRPointMake('A', 1)], pos,
+                 @"fireAtPoint should return ShipPositioning on hit");
+}
+
+- (void)testPlayersAutomaticallySinkTheirOwnShips
+{
+  RRShipPositioning *pos = [RRShipPositioning positioningWithShip:[RRShip destroyer] point:RRPointMake('A', 1) direction:RRDirectionRight];
+  [self.player positionShip:pos];
+  
+  for (RRPoint *point in [pos pointsContained])
+  {
+    XCTAssertEqualObjects([self.player shipsRemaining], [NSSet setWithArray:@[pos]],
+                          @"shipsRemaining");
+    XCTAssertEqualObjects([self.player shipsSunk], [NSSet set],
+                          @"shipsSunk");
+    [self.player fireAtPoint:point];
+  }
+  
+  XCTAssertEqualObjects([self.player shipsRemaining], [NSSet set],
+                        @"remaining should be empty");
+  XCTAssertEqualObjects([self.player shipsSunk], [NSSet setWithArray:@[pos]],
+                        @"sunk should have ship that has been sunk");
+}
+
 @end
