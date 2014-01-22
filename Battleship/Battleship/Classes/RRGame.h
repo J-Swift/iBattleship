@@ -14,6 +14,8 @@
 #import "RRDirection.h"
 #import "RRShipPositioning.h"
 
+// JPR TODO: inject the win condition
+
 @interface RRGame : NSObject
 
 @property (nonatomic, readonly) RRPlayer *player1;

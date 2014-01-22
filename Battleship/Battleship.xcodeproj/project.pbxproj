@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF5E687F188F8F4D0059289F /* RRMainMenuScene.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5E687E188F8F4D0059289F /* RRMainMenuScene.m */; };
+		BF5E6886188F96950059289F /* RRViewUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5E6885188F96950059289F /* RRViewUtils.m */; };
+		BF5E6887188F96950059289F /* RRViewUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5E6885188F96950059289F /* RRViewUtils.m */; };
+		BF5E688A188FA7870059289F /* RRGameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5E6889188FA7870059289F /* RRGameScene.m */; };
 		BF60BF3F188B53D5009DD3A1 /* RRPointTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF60BF3E188B53D5009DD3A1 /* RRPointTests.m */; };
 		BF60BF41188B62CC009DD3A1 /* RRShipTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF60BF40188B62CC009DD3A1 /* RRShipTests.m */; };
 		BF60BF43188B8020009DD3A1 /* RRPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF60BF42188B8020009DD3A1 /* RRPlayerTests.m */; };
@@ -29,7 +33,6 @@
 		BFDC3D5E1857E89F00EE971E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BFDC3D5D1857E89F00EE971E /* main.m */; };
 		BFDC3D621857E89F00EE971E /* RRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFDC3D611857E89F00EE971E /* RRAppDelegate.m */; };
 		BFDC3D681857E89F00EE971E /* RRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFDC3D671857E89F00EE971E /* RRViewController.m */; };
-		BFDC3D6B1857E89F00EE971E /* RRMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = BFDC3D6A1857E89F00EE971E /* RRMyScene.m */; };
 		BFDC3D6F1857E89F00EE971E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFDC3D6E1857E89F00EE971E /* Images.xcassets */; };
 		BFDC3D761857E89F00EE971E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFDC3D751857E89F00EE971E /* XCTest.framework */; };
 		BFDC3D771857E89F00EE971E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFDC3D4F1857E89F00EE971E /* Foundation.framework */; };
@@ -49,6 +52,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF5E687D188F8F4D0059289F /* RRMainMenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RRMainMenuScene.h; path = Classes/RRMainMenuScene.h; sourceTree = "<group>"; };
+		BF5E687E188F8F4D0059289F /* RRMainMenuScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RRMainMenuScene.m; path = Classes/RRMainMenuScene.m; sourceTree = "<group>"; };
+		BF5E6880188F92710059289F /* RRViewUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RRViewUtils.h; path = Classes/RRViewUtils.h; sourceTree = "<group>"; };
+		BF5E6885188F96950059289F /* RRViewUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RRViewUtils.m; path = Classes/RRViewUtils.m; sourceTree = "<group>"; };
+		BF5E6888188FA7870059289F /* RRGameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RRGameScene.h; path = Classes/RRGameScene.h; sourceTree = "<group>"; };
+		BF5E6889188FA7870059289F /* RRGameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RRGameScene.m; path = Classes/RRGameScene.m; sourceTree = "<group>"; };
 		BF60BF3E188B53D5009DD3A1 /* RRPointTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RRPointTests.m; path = Classes/RRPointTests.m; sourceTree = "<group>"; };
 		BF60BF40188B62CC009DD3A1 /* RRShipTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RRShipTests.m; path = Classes/RRShipTests.m; sourceTree = "<group>"; };
 		BF60BF42188B8020009DD3A1 /* RRPlayerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RRPlayerTests.m; path = Classes/RRPlayerTests.m; sourceTree = "<group>"; };
@@ -78,8 +87,6 @@
 		BFDC3D611857E89F00EE971E /* RRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RRAppDelegate.m; sourceTree = "<group>"; };
 		BFDC3D661857E89F00EE971E /* RRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RRViewController.h; sourceTree = "<group>"; };
 		BFDC3D671857E89F00EE971E /* RRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RRViewController.m; sourceTree = "<group>"; };
-		BFDC3D691857E89F00EE971E /* RRMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RRMyScene.h; sourceTree = "<group>"; };
-		BFDC3D6A1857E89F00EE971E /* RRMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RRMyScene.m; sourceTree = "<group>"; };
 		BFDC3D6E1857E89F00EE971E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BFDC3D741857E89F00EE971E /* BattleshipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BattleshipTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFDC3D751857E89F00EE971E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -126,8 +133,12 @@
 		BF60BF44188BA00D009DD3A1 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				BFDC3D691857E89F00EE971E /* RRMyScene.h */,
-				BFDC3D6A1857E89F00EE971E /* RRMyScene.m */,
+				BF5E6880188F92710059289F /* RRViewUtils.h */,
+				BF5E6885188F96950059289F /* RRViewUtils.m */,
+				BF5E687D188F8F4D0059289F /* RRMainMenuScene.h */,
+				BF5E687E188F8F4D0059289F /* RRMainMenuScene.m */,
+				BF5E6888188FA7870059289F /* RRGameScene.h */,
+				BF5E6889188FA7870059289F /* RRGameScene.m */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -333,12 +344,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF5E688A188FA7870059289F /* RRGameScene.m in Sources */,
 				BFA859D418865D2B00A496DD /* RRPlayer.m in Sources */,
 				BF6B2C621887918300479DB2 /* RRGame.m in Sources */,
 				BFDC3D621857E89F00EE971E /* RRAppDelegate.m in Sources */,
 				BFA859E018865F4900A496DD /* RRPoint.m in Sources */,
+				BF5E6886188F96950059289F /* RRViewUtils.m in Sources */,
+				BF5E687F188F8F4D0059289F /* RRMainMenuScene.m in Sources */,
 				BFDC3D5E1857E89F00EE971E /* main.m in Sources */,
-				BFDC3D6B1857E89F00EE971E /* RRMyScene.m in Sources */,
 				BFDC3D681857E89F00EE971E /* RRViewController.m in Sources */,
 				BF6B2C6618879B2500479DB2 /* RRShipPositioning.m in Sources */,
 				BFA859EB1886652300A496DD /* RRShip.m in Sources */,
@@ -353,6 +366,7 @@
 				BF6B2C631887918300479DB2 /* RRGame.m in Sources */,
 				BF60BF43188B8020009DD3A1 /* RRPlayerTests.m in Sources */,
 				BF60BF3F188B53D5009DD3A1 /* RRPointTests.m in Sources */,
+				BF5E6887188F96950059289F /* RRViewUtils.m in Sources */,
 				BF6B2C5F18878DA000479DB2 /* RRGameRunner.m in Sources */,
 				BFDC3D821857E89F00EE971E /* RRGameTests.m in Sources */,
 				BFA859EC1886652300A496DD /* RRShip.m in Sources */,

@@ -7,30 +7,66 @@
 //
 
 #import "RRViewController.h"
-#import "RRMyScene.h"
+#import "RRMainMenuScene.h"
+#import "RRGameScene.h"
+
+@interface RRViewController () <RRMainMenuDelegate>
+
+@end
 
 @implementation RRViewController
+{
+  BOOL _hasInitialized;
+}
 
 - (void)loadView
 {
   self.view = [[SKView alloc] initWithFrame:[UIScreen mainScreen].applicationFrame];
 }
 
-- (void)viewDidLoad
+- (void)viewWillLayoutSubviews
 {
-  [super viewDidLoad];
+  [super viewWillLayoutSubviews];
   
-  // Configure the view.
-  SKView *skView = (SKView *)self.view;
-  skView.showsFPS = YES;
-  skView.showsNodeCount = YES;
-  
-  // Create and configure the scene.
-  SKScene * scene = [RRMyScene sceneWithSize:skView.bounds.size];
-  scene.scaleMode = SKSceneScaleModeAspectFill;
-  
-  // Present the scene.
-  [skView presentScene:scene];
+  // http://www.ymc.ch/en/ios-7-sprite-kit-setting-up-correct-scene-dimensions
+  if ( !_hasInitialized )
+  {
+    _hasInitialized = YES;
+    
+    // Configure the view.
+    SKView *skView = (SKView *)self.view;
+    skView.showsFPS = YES;
+    skView.showsNodeCount = YES;
+    
+    // Create and configure the scene.
+    RRMainMenuScene *scene = [RRMainMenuScene sceneWithSize:skView.bounds.size];
+    scene.delegate = self;
+    scene.scaleMode = SKSceneScaleModeAspectFit;
+    
+    // Present the scene.
+    [skView presentScene:scene];
+  }
 }
+
+- (void)menuScene:(SKScene *)scene didSelectMenuOption:(RRMainMenuOption)option
+{
+  switch (option)
+  {
+    case RRMainMenuOptionPlay:
+    {
+      RRGameScene *gameScene = [RRGameScene sceneWithSize:self.view.bounds.size];
+      
+      SKTransition *t = [SKTransition pushWithDirection:SKTransitionDirectionLeft duration:0.5f];
+      t.pausesIncomingScene = YES;
+      
+      [(SKView *)self.view presentScene:gameScene transition:t];
+      break;
+    }
+    default:
+    case RRMainMenuOptionQuit:
+      exit(0);
+  }
+}
+
 
 @end
